@@ -3,5 +3,5 @@
 if [ -z "$*" ]; then
   bash
 else
-  bash -c "$@"
+  bash -c "$*"
 fi
