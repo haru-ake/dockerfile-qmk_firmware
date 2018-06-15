@@ -20,7 +20,8 @@ RUN apt-get update && \
       avrdude && \
     apt-get install --no-install-recommends -y \
       ruby \
-      rake && \
+      rake \
+      openssh-client && \
     rm -rf /var/lib/apt/lists/*
 
 VOLUME /qmk
