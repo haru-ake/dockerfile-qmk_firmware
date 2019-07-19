@@ -19,7 +19,8 @@ RUN apt-get update && \
       git \
       avrdude \
       diffutils \
-      python3 && \
+      python3 \
+      python3-pip && \
     apt-get install --no-install-recommends -y \
       ruby \
       rake \
