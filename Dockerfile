@@ -17,12 +17,15 @@ RUN apt-get update && \
       binutils-arm-none-eabi \
       libnewlib-arm-none-eabi \
       git \
-      avrdude && \
+      avrdude \
+      diffutils \
+      python3 && \
     apt-get install --no-install-recommends -y \
       ruby \
       rake \
       openssh-client && \
     rm -rf /var/lib/apt/lists/*
+RUN pip3 install argcomplete colorama
 
 VOLUME /qmk
 WORKDIR /qmk
